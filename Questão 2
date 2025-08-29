@@ -1,0 +1,10 @@
+def inserirVetor(lista):
+    numero = int(input("Digite um número para adicionar ao vetor:" ))
+    n = len(lista)
+    for i in range(n):
+        if numero < lista[i]:
+             lista.insert(i, numero)
+             break
+    else:
+        lista.append(numero)
+    return lista
