@@ -1,0 +1,7 @@
+def verificaLista(lista):
+    n = len(lista)
+    for i in range (n-1):
+        if lista[i] > lista[i+1]:
+            print("Não esta ordenada")
+            return
+    print("Está ordenada")
